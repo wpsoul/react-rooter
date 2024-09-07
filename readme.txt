@@ -1,23 +1,18 @@
 ===  ===
 Contributors:      The WordPress Contributors
 Tags:              block
-Tested up to:      6.1
+Tested up to:      6.6
 Stable tag:        0.1.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
-Example block scaffolded with Create Block tool.
+React Router for WordPress
 
 == Description ==
 
-This is the long description. No limit, and you can use Markdown (as well as in the following sections).
-
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+Plugin that allows you to use React applications directly in your WordPress frontend and backend
 
 == Installation ==
-
-This section describes how to install the plugin and get it working.
 
 e.g.
 
@@ -27,29 +22,19 @@ e.g.
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= How to use plugin =
 
-An answer to that question.
+We recommend to use it on local development first and then build application. Open src folder and App.js. This is your entry point of application. Use here any React or Wordpress React code. If you want to add styles only for frontend, use editor.scss file. For both frontend and backend, use style.scss. You can use commands:
 
-= What about foo bar? =
+npm run build - to build application
+npm run start - to start development server
+npm run hot-start - to start hot reload server. This will open local host with application and will watch for changes. If you will find that it doesn't work, change gulpfile.js and set correct url of your local wordpress site in siteUrl variable. Also try to remove port option.
 
-Answer to foo bar dilemma.
+= How to add React app on page =
 
-== Screenshots ==
-
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+Just open editor and add React Router block. This will render React application on page.
 
 == Changelog ==
 
 = 0.1.0 =
 * Release
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above. This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation." Arbitrary sections will be shown below the built-in sections outlined above.
