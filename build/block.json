@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "greenlight/react-rooter",
+  "title": "React Rooter",
+  "version": "0.1.0",
+  "category": "widgets",
+  "icon": "admin-plugins",
+  "description": "React Rooter for WordPress",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "greenlightrooter",
+  "editorScript": "file:./index.js",
+  "viewScript": "file:./view.js",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    }
+  }
+}
